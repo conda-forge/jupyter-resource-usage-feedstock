@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -20,7 +20,7 @@ requirements:
     - pip
     - jupyter-packaging >=0.10,<1
   run:
-    - jupyter_server >=1.0.0,<2
+    - jupyter_server >=1.0.0,<3
     - psutil
     - python >=3.6
 
