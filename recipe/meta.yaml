@@ -16,13 +16,13 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
-    - jupyter-packaging >=0.10,<1
+    - hatchling
   run:
-    - jupyter_server >=1.0.0,<2
+    - jupyter_server >=1.0.0,<3
     - psutil
-    - python >=3.6
+    - python >=3.7
 
 test:
   imports:
