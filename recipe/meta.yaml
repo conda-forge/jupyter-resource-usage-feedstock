@@ -24,6 +24,7 @@ requirements:
     - jupyter_server >=2.0.0,<3
     - psutil
     - python >=3.8
+    - pyzmq >=19
 
 test:
   imports:
