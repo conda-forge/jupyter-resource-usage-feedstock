@@ -1,5 +1,5 @@
 {% set name = "jupyter-resource-usage" %}
-{% set version = "0.7.2" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: ab596a1f2f6ced9e5d063f56b772d88527d2539d61831fbfb80a37f940d3e9df
+  sha256: 74b35b5040c6034e06062f72f8bc5b4a473549e009151be488dd3f61866b854b
 
 build:
   noarch: python
@@ -16,14 +16,14 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
     - hatchling
     - hatch-jupyter-builder
   run:
     - jupyter_server >=1.0.0,<3
     - psutil
-    - python >=3.7
+    - python >=3.8
 
 test:
   imports:
