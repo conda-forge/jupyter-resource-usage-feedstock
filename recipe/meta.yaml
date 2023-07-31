@@ -21,7 +21,7 @@ requirements:
     - hatchling
     - hatch-jupyter-builder
   run:
-    - jupyter_server >=1.0.0,<3
+    - jupyter_server >=2.0.0,<3
     - psutil
     - python >=3.8
 
