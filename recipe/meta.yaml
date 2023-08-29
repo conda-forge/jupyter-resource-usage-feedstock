@@ -1,5 +1,5 @@
 {% set name = "jupyter-resource-usage" %}
-{% set version = "1.0.0" %}
+{% set version = "1.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 74b35b5040c6034e06062f72f8bc5b4a473549e009151be488dd3f61866b854b
+  sha256: ede723ebb63d531615d0da4f8769470c8ee9cc3fa18e6af9a12b70f11972cc61
 
 build:
   noarch: python
